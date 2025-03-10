@@ -1,0 +1,31 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+@import "tailwindcss";
+
+@theme {
+    --font-BsDisplay: "Audiowide", "serif";
+    --font-BsText: "Roboto", "serif";
+
+    --color-BsGradient: linear-gradient(to right, rgba(247, 200, 115, 1), rgba(145, 117, 68, 1));
+    --color-BsYellow-100: rgba(247, 200, 115, 1);
+    --color-BsYellow-75: rgba(247, 200, 115, 0.75);
+    --color-BsYellow-50: rgba(247, 200, 115, 0.50);
+    --color-BsYellow-25: rgba(247,200,115,0.25);
+    --color-BsGray-100: rgba(49, 49, 49, 1);
+    --color-BsGray-75: rgba(49, 49, 49, 0.75);
+    --color-BsGray-50: rgba(49, 49, 49, 0.50);
+    --color-BsGray-25: rgba(49, 49, 49, 0.25);
+    --color-BsGold-100: rgba(145, 117, 68, 1);
+    --color-BsGold-75: rgba(145, 117, 68, 0.75);
+    --color-BsGold-50: rgba(145, 117, 68, 0.50);
+    --color-BsGold-25: rgba(145, 117, 68, 0.25);
+    --color-BsSilver-100: rgba(175, 174, 171, 1);
+    --color-BsSilver-75: rgba(175, 174, 171, 0.75);
+    --color-BsSilver-50: rgba(175, 174, 171, 0.50);
+    --color-BsSilver-25: rgba(175, 174, 171, 0.25);
+    --color-BsBlue-100: rgba(15, 32, 52, 1);
+    --color-BsBlue-75: rgba(15, 32, 52, 0.75);
+    --color-BsBlue-50: rgba(15, 32, 52, 0.50);
+    --color-BsBlue-25: rgba(15, 32, 52, 0.25);
+}
