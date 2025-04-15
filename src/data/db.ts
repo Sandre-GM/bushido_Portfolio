@@ -135,7 +135,7 @@ export const db: Proyects = [
         details: {
             date: "18 de Enero de 2025",
             tech: "Adobe Ilustrator Creative Thinking",
-            url: "",
+            url: "https://bushidoportfolio.netlify.app",
             challenge: ""
         },
         category: "Designer",
@@ -149,7 +149,7 @@ export const db: Proyects = [
         details: {
             date: "18 de Enero de 2022",
             tech: "Adobe Ilustrator Creative Thinking",
-            url: "",
+            url: "https://bushidoportfolio.netlify.app",
             challenge: ""
         },
         category: "Designer",
@@ -163,7 +163,7 @@ export const db: Proyects = [
         details: {
             date: "18 de Enero de 2025",
             tech: "Adobe Ilustrator Adobe InDesign Adobe Photoshop Creative Thinking",
-            url: "",
+            url: "https://bushidoportfolio.netlify.app",
             challenge: ""
         },
         category: "Designer",
@@ -177,7 +177,7 @@ export const db: Proyects = [
         details: {
             date: "18 de Enero de 2025",
             tech: "Adobe Ilustrator  Adobe Photoshop Creative Thinking",
-            url: "",
+            url: "https://bushidoportfolio.netlify.app",
             challenge: ""
         },
         category: "Designer",
@@ -191,7 +191,7 @@ export const db: Proyects = [
         details: {
             date: "2 de Junio de 2023",
             tech: "Ilustrator Adobe Photoshop Creative Thinking",
-            url: "",
+            url: "https://bushidoportfolio.netlify.app",
             challenge: ""
         },
         category: "Designer",
@@ -204,8 +204,8 @@ export const db: Proyects = [
         description: 'Creation of logo for Pink Moon nail studio, with formal style, delivery of correct use manual',
         details: {
             date: "18 de Enero de 2025",
-            tech: " Ilustrator Adobe Photoshop Creative Thinking",
-            url: "",
+            tech: "Ilustrator Adobe Photoshop Creative Thinking",
+            url: "https://bushidoportfolio.netlify.app",
             challenge: "Integrate a formal style"
         },
         category: "Designer",
@@ -219,7 +219,7 @@ export const db: Proyects = [
         details: {
             date: "Mayo de 2024",
             tech: "Figma Ilustrator",
-            url: "",
+            url: "https://bushidoportfolio.netlify.app",
             challenge: "The views must be correctly integrated with the current BBVA design"
         },
         category: "Designer",
@@ -233,7 +233,7 @@ export const db: Proyects = [
         details: {
             date: "Marzo 2024",
             tech: "Figma ",
-            url: "https://www.google.com",
+            url: "https://bushidoportfolio.netlify.app",
             challenge: "The integration of IOS Styles "
         },
         category: "Designer",
@@ -247,7 +247,7 @@ export const db: Proyects = [
         details: {
             date: "Noviembre 2024",
             tech: "Figma Aqui va la tech",
-            url: "https://www.google.com",
+            url: "https://bushidoportfolio.netlify.app",
             challenge: "Maintain a secure appearance for development and design reasons"
         },
         category: "Designer",
@@ -261,7 +261,7 @@ export const db: Proyects = [
         details: {
             date: "8 Diciembre 2024",
             tech: "Photoshop Ilustrator ",
-            url: "",
+            url: "https://bushidoportfolio.netlify.app",
             challenge: "BTL ATL advertising campaign"
         },
         category: "Designer",
@@ -275,7 +275,7 @@ export const db: Proyects = [
         details: {
             date: "8 Diciembre 2024",
             tech: "Photoshop Ilustrator ",
-            url: "",
+            url: "https://bushidoportfolio.netlify.app",
             challenge: ""
         },
         category: "Designer",

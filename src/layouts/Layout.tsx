@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import { useModeStore } from "../store";
 import Footer from "../components/Footer";
 import { ToastContainer } from "react-toastify";
+import Modal from "../components/Modal";
 
 export default function Layout() {
   const mode = useModeStore((state) => state.mode);
@@ -19,6 +20,7 @@ export default function Layout() {
           <Outlet />
         </main>
       )}
+      <Modal />
       <Footer />
     </>
   );

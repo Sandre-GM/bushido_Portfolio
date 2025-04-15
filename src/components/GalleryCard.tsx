@@ -7,25 +7,27 @@ type GalleryCardProps = {
 
 export default function GalleryCard({ proyect }: GalleryCardProps) {
   const mode = useModeStore((state) => state.mode);
+
+  const selectProject = useModeStore((state) => state.selectProject);
   return (
     <div
       className={
         mode
-          ? "flex flex-col md:w-3/7 lg:w-2/7  bg-linear-180 from-BsYellow-100 to-BsGold-100 shadow-2xl  rounded-lg "
-          : "flex flex-col md:w-3/7 lg:w-2/7  bg-linear-180 from-white to-BsGray-100 shadow-2xl  rounded-lg "
+          ? "flex flex-col max-w-sm min-w-80 h-[460px] bg-linear-180 from-BsYellow-100 to-BsGold-100 shadow-2xl shadow-BsGold-50  rounded-lg "
+          : "flex flex-col max-w-sm min-w-80 h-[460px]  bg-linear-180 from-white to-BsGray-100 shadow-2xl shadow-BsSilver-50 rounded-lg "
       }>
-      <div className=" h-56 overflow-hidden rounded-t-md">
+      <div className=" h-[340px] overflow-hidden rounded-t-md">
         <img
           src={`/${proyect.image}.webp`}
           alt={proyect.image}
           className="object-cover h-full w-full"
         />
       </div>
-      <div className="p-4">
+      <div className="p-4 flex flex-col justify-center items-center gap-2">
         <h6
           className={
             mode
-              ? "mb-2 text-BsYellow-100 text-xl text-center font-BsDisplay"
+              ? " text-BsYellow-100 text-xl text-center font-BsDisplay"
               : "mb-2 text-white text-xl text-center font-BsDisplay"
           }>
           {proyect.name}
@@ -33,24 +35,16 @@ export default function GalleryCard({ proyect }: GalleryCardProps) {
         <p className="text-white text-center text-xl leading-normal font-light">
           {proyect.category}
         </p>
-        <p
+        <button
+          onClick={() => selectProject(proyect.id)}
           className={
             mode
-              ? "text-BsGray-100 leading-normal font-light"
-              : "text-white leading-normal font-light"
+              ? "py-2 px-1.5 bg-linear-10 from-BsGold-100 to-BsYellow-100 text-white font-medium rounded-sm max-w-28 shadow-sm cursor-pointer hover:bg-linear-90"
+              : "py-2 px-1.5 bg-linear-10 from-BsGray-100 to-BsSilver-100 text-white font-medium rounded-sm max-w-28 shadow-sm cursor-pointer hover:bg-linear-90"
           }>
-          {proyect.details.date}
-        </p>
-        <p
-          className={
-            mode
-              ? "text-BsGray-100 leading-normal font-light"
-              : "text-white leading-normal font-light"
-          }>
-          {proyect.description}
-        </p>
+          View Project
+        </button>
       </div>
-      <div className="px-4 pb-4 pt-0 mt-2"></div>
     </div>
   );
 }
