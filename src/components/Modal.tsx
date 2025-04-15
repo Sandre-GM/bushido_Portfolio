@@ -7,10 +7,20 @@ export default function Modal() {
   const mode = useModeStore((state) => state.mode);
   const closeModal = useModeStore((state) => state.closeModal);
   const selectedProject = useModeStore((state) => state.selectedProject);
+
+  if (!selectedProject.image) {
+    return null;
+  }
+
   return (
     <>
       <Transition appear show={modal} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+        <Dialog
+          as="div"
+          className="relative z-10"
+          onClose={() => {
+            closeModal();
+          }}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -22,9 +32,9 @@ export default function Modal() {
             <div className="fixed inset-0 bg-BsGray-75" />
           </Transition.Child>
 
-          <div className="fixed  inset-0 overflow-y-auto flex justify-center items-center m-auto md:h-8/12 md:w-8/12 p-2 rounded-2xl  ">
+          <div className="fixed  inset-0 overflow-y-auto flex justify-center items-center m-auto  md:h-8/12 md:w-8/12 p-2 rounded-2xl  ">
             <div
-              className="grid grid-cols-3  bg-cover bg-no-repeat w-full h-full rounded-2xl overflow-auto"
+              className="grid grid-cols-3  bg-cover bg-no-repeat w-full md:h-full rounded-2xl overflow-auto mx-auto mt-50 md:mt-0"
               style={{
                 backgroundImage: `url(/${selectedProject.image}.webp)`,
               }}>
@@ -39,7 +49,7 @@ export default function Modal() {
                 <Dialog.Panel
                   className={
                     mode
-                      ? "relative flex flex-col justify-center  gap-5 bg-BsGold-75 col-span-5 md:col-span-3 lg:col-span-2  xl:col-span-1 p-4 "
+                      ? "relative flex flex-col justify-center h-full w-full gap-5 bg-BsGold-75 col-span-5 md:col-span-3 lg:col-span-2  xl:col-span-1 p-4 "
                       : "relative flex flex-col justify-center  gap-5 bg-BsGray-75 col-span-5 md:col-span-3 lg:col-span-2  xl:col-span-1 p-4"
                   }>
                   <Dialog.Title
