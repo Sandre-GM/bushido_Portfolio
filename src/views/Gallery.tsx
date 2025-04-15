@@ -30,7 +30,7 @@ export default function Gallery() {
           Gallery Projects
         </h2>
       </div>
-      <div className=" w-full md:max-w-8/12 lg:max-w-6/12 flex flex-wrap justify-center m-auto gap-10 mt-10">
+      <div className=" w-full md:max-w-8/12 flex flex-wrap justify-center mx-auto gap-10 mt-10  ">
         {proyects.map((proyect) => {
           return <GalleryCard key={proyect.id} proyect={proyect} />;
         })}

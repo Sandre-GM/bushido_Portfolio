@@ -13,7 +13,7 @@ export default function GalleryCard({ proyect }: GalleryCardProps) {
     <div
       className={
         mode
-          ? "flex flex-col max-w-sm min-w-80 h-[460px] bg-linear-180 from-BsYellow-100 to-BsGold-100 shadow-2xl shadow-BsGold-50  rounded-lg "
+          ? "flex flex-col max-w-sm min-w-80 h-[460px] bg-linear-180 from-BsYellow-100 to-BsGold-100 shadow-2xl shadow-BsGold-50  rounded-lg p-2 sm:p-0"
           : "flex flex-col max-w-sm min-w-80 h-[460px]  bg-linear-180 from-white to-BsGray-100 shadow-2xl shadow-BsSilver-50 rounded-lg "
       }>
       <div className=" h-[340px] overflow-hidden rounded-t-md">
